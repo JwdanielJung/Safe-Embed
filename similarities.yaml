@@ -21,26 +21,3 @@ average_similarities:
     similarity: 0.379
   - model: llm2vec-llama3
     similarity: 0.48
-
-
-average_boundary:
-  - model: sentence-bert-all
-    similarity: 0.711
-  - model: sentence-bert-paraphrase
-    similarity: 0.736
-  - model: sup-simcse
-    similarity: 0.781
-  - model: unsup-simcse
-    similarity: 0.737
-  - model: st5-base
-    similarity: 0.911
-  - model: st5-large
-    similarity: 0.885
-  - model: st5-xl
-    similarity: 0.86
-  - model: st5-xxl
-    similarity: 0.861
-  - model: text-embedding-v3
-    similarity: 0.683
-  - model: llm2vec
-    similarity: 0.734

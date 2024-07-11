@@ -1,9 +1,8 @@
-raw_data/
 embeddings/
 __pycache__/
 
 .env
 
-Categorical_Purity/embeddings.jsonl
-Categorical_Purity/cp.jsonl
-Categorical_Purity/test.ipynb
+Safety_Taxonomy/embeddings.jsonl
+Safety_Taxonomy/cp.jsonl
+Safety_Taxonomy/test.ipynb

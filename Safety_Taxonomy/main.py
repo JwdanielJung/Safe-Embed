@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     print(f"is_preprocessed: {args.is_preprocessed}")
 
-    raw = load_data('../raw_data/do_not_answer.csv')
+    raw = load_data('../dataset/do_not_answer.csv')
     query = raw['question'].tolist()
     risk_category = raw['types_of_harm'].tolist()
 

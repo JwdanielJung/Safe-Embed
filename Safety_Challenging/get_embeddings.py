@@ -4,16 +4,13 @@ import json
 import argparse
 import os
 
-
 parser = argparse.ArgumentParser()
 parser.add_argument('embedding_model', type=str, help='embedding_model')
 args = parser.parse_args()
 
 embedding_model = args.embedding_model
 
-
-
-dataset = pd.read_csv("Safety_Challenging/xstest_aug.csv")
+dataset = pd.read_csv("dataset/xstest_aug.csv")
 
 unsafe_list = dataset['unsafe_prompt'].tolist()
 safe_list = dataset['safe_prompt'].tolist()

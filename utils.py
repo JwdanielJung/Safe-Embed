@@ -78,7 +78,7 @@ def get_similarity(original_embedding, modified_embedding):
     return similarity
 
 def normalize_similarity(original_similarity, embedding_model):
-    with open('data.yaml', 'r') as file:
+    with open('similarities.yaml', 'r') as file:
         data = yaml.safe_load(file)
 
     for avg_similarity in data['average_similarities']:
@@ -89,11 +89,11 @@ def normalize_similarity(original_similarity, embedding_model):
 
     return norm_cos
 
-def get_5_paraphrases(original_sentence, client, template_id, category):
-    with open('gpt_templates.yaml', 'r') as file:
+def get_5_contrasts(original_sentence, client, template_id, category):
+    with open('Safety_Contrast/gpt_templates.yaml', 'r') as file:
         data = yaml.safe_load(file)
 
-    for template in data['paraphrase_templates']:
+    for template in data['contrast_templates']:
         if template['id'] == template_id:
             content = template['content']
             break
@@ -114,9 +114,9 @@ def get_5_paraphrases(original_sentence, client, template_id, category):
     return response
 
 
-def parse_paraphrase_data(element):
-    paraphrased_element = element['paraphrased_element']
-    start_index = paraphrased_element.find('{\n  \"prompt_#1')
-    end_index = paraphrased_element.find('\"}\n}')+5
-    paraphrase_dict = literal_eval(paraphrased_element[start_index:end_index])
-    return paraphrase_dict
+def parse_contrast_data(element):
+    contrast_element = element['contrasts']
+    start_index = contrast_element.find('{\n  \"prompt_#1')
+    end_index = contrast_element.find('\"}\n}')+5
+    contrast_dict = literal_eval(contrast_element[start_index:end_index])
+    return contrast_dict

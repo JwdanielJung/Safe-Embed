@@ -11,7 +11,7 @@ parser.add_argument('embedding_model', type=str, help='embedding_model')
 args = parser.parse_args()
 embedding_model = args.embedding_model
 
-dataset = pd.read_json(f"Safety_Contrast/paraphrase_parsed.jsonl", lines=True)
+dataset = pd.read_json(f"Safety_Contrast/data/contrast_parsed.jsonl", lines=True)
 prompt_types = ['original_prompt', 'prompt_#1','prompt_#2','prompt_#3','prompt_#4','prompt_#5']
 
 embed_dict = {}

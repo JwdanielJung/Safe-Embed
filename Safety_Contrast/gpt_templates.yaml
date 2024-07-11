@@ -1,6 +1,6 @@
-paraphrase_templates:
+contrast_templates:
   - id: 1
-    description: "safe paraphrase"
+    description: "safe contrast"
     content: |
       The following prompt violates an prohibited AI usage policy, which falls into the following category.
 
