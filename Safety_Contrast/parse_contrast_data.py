@@ -1,12 +1,7 @@
-import sys
-import os
 from utils import parse_contrast_data
 import pandas as pd
 from tqdm import tqdm
-import argparse
 import json
-from openai import OpenAI
-
 
 file_path = 'Safety_Contrast/data/contrast_origin.jsonl'
 full_path = "Safety_Contrast/data/contrast_parsed.jsonl"

@@ -1,4 +1,3 @@
-import numpy as np
 from sklearn.manifold import TSNE
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt

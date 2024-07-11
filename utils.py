@@ -4,12 +4,10 @@ import torch
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
-from scipy.spatial.distance import cosine
 from transformers import AutoModel, AutoTokenizer
 from llm2vec import LLM2Vec
 from huggingface_hub import login
 import warnings
-import json
 from ast import literal_eval
 
 warnings.filterwarnings("ignore")

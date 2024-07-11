@@ -1,9 +1,7 @@
-import sys
 import os
 from utils import get_5_contrasts
 import pandas as pd
 from tqdm import tqdm
-import argparse
 import json
 from openai import OpenAI
 

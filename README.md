@@ -14,3 +14,23 @@ Official Code Repository for the paper: [Safe-Embed: Unveiling the Safety-Critic
 <div align="center">
   <img alt="Safe-Embed Overview" src="./images/Safe-Embed.png" width="400px">
 </div>
+
+## Install environment with Conda
+Create a conda environment and follow `setup.sh` to install dependencies.
+
+## Safety-Challenging Task
+
+## Safety-Taxonomy Task
+
+## Citation
+```
+@article{kim2024safeembed,
+      title={Safe-Embed: Unveiling the Safety-Critical Knowledge of Sentence Encoders}, 
+      author={Jinseok Kim and Jaewon Jung and Sangyeop Kim and Sohyung Park and Sungzoon Cho},
+      year={2024},
+      eprint={2407.06851},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2407.06851}, 
+}
+```

@@ -1,6 +1,5 @@
 import pandas as pd
-from utils import get_embedding, get_similarity, normalize_similarity
-import json
+from utils import get_similarity, normalize_similarity
 import argparse
 import statistics
 
