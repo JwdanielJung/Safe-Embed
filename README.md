@@ -5,7 +5,7 @@ Official Code Repository for the paper: [Safe-Embed: Unveiling the Safety-Critic
 ## Abstract
 
 <div align="center">
-  <img alt="Safe-Embed Overview" src="./images/Safe-Embed.png" width="800px">
+  <img alt="Safe-Embed Overview" src="./images/Safe-Embed.png" width="400px">
 </div>
 
 
