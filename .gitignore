@@ -1,15 +1,7 @@
 raw_data/
-
-Jailbreak_test/modified_versions
-Jailbreak_test/results
-
-Xstest/v1/embeddings
-
-Paraphrase_test/__pycache__
-Paraphrase_test/paraphrased_versions
-Paraphrase_test/paraphrase_embeddings
-
+embeddings/
 __pycache__/
+
 .env
 
 Categorical_Purity/embeddings.jsonl
