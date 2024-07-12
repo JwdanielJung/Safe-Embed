@@ -4,6 +4,13 @@ import pandas as pd
 from tqdm import tqdm
 import json
 from openai import OpenAI
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('OPENAI_API_KEY', type=str, help='OPENAI_API_KEY')
+
+args = parser.parse_args()
+key = args.OPENAI_API_KEY
 
 file_path = 'dataset/do_not_answer.csv'
 
@@ -12,7 +19,7 @@ df = pd.read_csv(file_path)
 full_path = "Safety_Contrast/data/contrast_origin.jsonl"
 
 client = OpenAI(
-    api_key = os.getenv('OPENAI_API_KEY')
+    api_key = key
 )
 
 with open(full_path, mode = "w", encoding="utf-8") as wf:
