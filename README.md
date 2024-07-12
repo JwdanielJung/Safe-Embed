@@ -18,9 +18,31 @@ Official Code Repository for the paper: [Safe-Embed: Unveiling the Safety-Critic
 ## Install environment with Conda
 Create a conda environment and follow `setup.sh` to install dependencies.
 
-## Safety-Challenging Task
+## Run Experiments
 
-## Safety-Taxonomy Task
+### Safety-Challenging Task
+
+- To run the task with Safety-Challenging set for each model, follow the command:
+
+```
+source scripts/safety_challenging.sh
+```
+
+- To run the task with Safety-Contrast set for each model, follow the command:
+
+```
+source scripts/safety_contrast.sh
+```
+
+### Safety-Taxonomy Task
+
+- To run the task with Safety-Taxonomy set for each model, follow the command:
+
+```
+source scripts/safety_taxnonmy.sh
+```
+
+
 
 ## Citation
 ```
