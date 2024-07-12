@@ -1,8 +1,6 @@
 embeddings/
 __pycache__/
 
-.env
-
 Safety_Taxonomy/embeddings.jsonl
 Safety_Taxonomy/cp.jsonl
 Safety_Taxonomy/test.ipynb
