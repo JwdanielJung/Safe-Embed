@@ -45,6 +45,7 @@ if __name__ == "__main__":
     tsne = TSNE(n_components=2, random_state=0)
     embeddings_2d = tsne.fit_transform(embedding_normalized)
 
+    # Using official model name for plotting
     with open('./Safety_Taxonomy/mapping_names.yaml', 'r') as f:
         mapping_data = yaml.safe_load(f)
     embedding_model_name = mapping_data['embedding_models'].get(embedding_model)
