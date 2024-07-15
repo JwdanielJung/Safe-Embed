@@ -18,7 +18,7 @@ Official Code Repository for the paper: [Safe-Embed: Unveiling the Safety-Critic
 ## Install environment with Conda
 Create a conda environment and follow `setup.sh` to install dependencies.
 
-## Prepare Keys
+## OPENAI API KEY & Huggingface token
 Put OpenAI key and Huggingface token in the `.env` file. Please avoid uploading your key and token to public repository!
 
 ## Prepare Datasets
