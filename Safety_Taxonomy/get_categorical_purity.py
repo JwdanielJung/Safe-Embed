@@ -1,15 +1,10 @@
-import os
+from collections import defaultdict
+from sklearn.metrics.pairwise import cosine_similarity
 import argparse
 import json
 import yaml
-import pandas as pd
-from tqdm import tqdm
-from collections import defaultdict
-from sklearn.metrics.pairwise import cosine_similarity
 import sys
 import os
-import yaml
-import json
 import pandas as pd
 import numpy as np
 
